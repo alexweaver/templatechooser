@@ -1,0 +1,1 @@
+CREATE DATABASE templatechooser_db;

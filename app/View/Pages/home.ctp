@@ -56,7 +56,20 @@
 		<div id="droppable">
 			<ul id="mylist"></ul>
 		</div>
-		<button class="btn btn-primary">Save</button>
+		<?php
+			echo $this->Form->postButton('Save', "/forms/create/", array('class' => 'btn btn-primary', 'onclick' => 'postData()')); 
+		?>
+
+		<script>
+			function postData()
+			{
+				var input = $('<input></input>');
+				input.attr('name', 'name');
+				input.val($('#form-header').text());
+				input.hide();
+				$("form").append(input);
+			}
+		</script>
 	</div>
 </div>
 
