@@ -1,0 +1,15 @@
+#tc-navbar
+{
+	height: 40px;
+	background-color: black;
+}
+
+#form-chooser
+{
+	height: 100%;
+	background-color: black;
+	border: 0px;
+	color: white;
+	outline: none;
+	cursor: pointer;
+}
